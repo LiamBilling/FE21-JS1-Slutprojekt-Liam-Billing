@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="#">
+    <title>Väder App</title>
+</head>
+
+<body>
+
+
+    <form>
+        <legend>Välkommen till Liam´s väderapp!</legend>
+        <label for="getWeather">Stad</label>
+        <input id="getWeather" name="city" type="text" placeholder="Skriv stad (ex. Stockholm)" required>
+        <label for="getCountry">Land</label>
+        <select id="getCountry" type="text" placeholder="Land (ex. SE)" required></select>
+        <button type='submit' id="userSubmit"><i class="fa fa-search"></i></button>
+    </form>
+
+    <div id=loadingAnime>
+
+    </div>
+    
+    <div id="results">
+        <div id="border">
+        <h1 id="cityTitle">Välj en stad och ett land ↑</h1>
+        <img id="icon" src="" alt="">
+        <p id="temp"></p>
+        <p id="wind"></p>
+        <p id="humidity"></p>
+        <p id="description"></p>
+    </div>
+    </div>
+    <div id="errorDiv">
+            <h1 id="errorMsg"></h1>
+    </div>
+
+
+    <div id="fiveDays">
+         
+    </div>
+
+
+
+
+    <script src="js/contryList.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
