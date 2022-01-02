@@ -1,4 +1,4 @@
-fetch(`hhttps://raw.githubusercontent.com/LiamBilling/LiamBilling-FE21-JS1-Slutprojekt-Liam-Billing/main/js/countries.jsonS`)
+fetch(`https://raw.githubusercontent.com/LiamBilling/FE21-JS1-Slutprojekt-Liam-Billing/main/js/countries.json`)
 .then(  
     function(response) {
     console.log(response);
